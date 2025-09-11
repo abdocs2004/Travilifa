@@ -72,7 +72,7 @@ nav ul li {
 
 .main {
     height: 100svh;
-    background-image: url('/img/beautiful-coastline-landscape.jpg');
+    background-image: url('beautiful-coastline-landscape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
