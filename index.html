@@ -4,306 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Travilifa is a modern coastal hotel where you can explore rooms, check availability, and reserve your stay in minutes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Travilifa</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LodgingBusiness",
+            "name": "Travilifa Hotel",
+            "description": "A modern coastal hotel offering curated rooms, wellness amenities, and easy reservations.",
+            "url": "https://example.com",
+            "telephone": "+20-102-596-7218",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Seafront Avenue 18",
+                "addressLocality": "Alexandria",
+                "addressRegion": "Alexandria",
+                "addressCountry": "EG"
+            },
+            "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "Ocean-view rooms", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Infinity pool", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Spa and wellness", "value": true}
+            ],
+            "checkinTime": "15:00",
+            "checkoutTime": "11:00"
+        }
+    </script>
+    <title>Travilifa Hotel - Coastal Escape</title>
 </head>
 
 <body>
-    <div id="top">
-        <header class="px-4">
-            <h1>Travilifa</h1>
-            <nav>
-                <ul>
-                    <li><a class="nav-link" href="/">Home</a></li>
-                    <li><a class="nav-link" href="#discover">Discover</a> </li>
-                    <li><a class="nav-link" href="#services">Services</a> </li>
-                    <li><a class="nav-link" href="#news">News</a> </li>
-                    <li><a class="nav-link" href="#about">About Us</a> </li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="page">
+        <header class="header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">T</span>
+                    Travilifa
+                </a>
+                <nav class="nav" data-nav>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a class="btn btn-outline" href="offers.html">Seasonal Offers</a>
+                    <a class="btn btn-primary" href="reservations.html">Book a stay</a>
+                </div>
+                <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
         </header>
-        <div class="main">
-            <h2>Explore the world with a smile..</h2>
-            <p class="p-3">A modern Hotel Booking Website where you can explore rooms, check availability, and make
-                reservations in just a few clicks.</p>
-            <div class="main__search p-1 ps-2"><i class="fa-solid fa-location"></i><input type="text"
-                    placeholder="Search for places to visit"><button class="btn btn-success">Find trip now<i
-                        class="fa-solid fa-search p-2"></i></button></div>
-        </div>
-        <section class="home-section1 h-75">
+
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-text reveal">
+                        <span class="pill">Modern coastal hotel</span>
+                        <h1 class="hero-title">Wake up to soft light, salt air, and a calm you can feel.</h1>
+                        <p class="section-subtitle">Travilifa is your curated escape on the Mediterranean shoreline, with design-led rooms, spa rituals, and effortless reservations.</p>
+                        <div class="tag-row">
+                            <span class="tag">Oceanfront dining</span>
+                            <span class="tag">Wellness spa</span>
+                            <span class="tag">Private beach</span>
+                        </div>
+                        <div class="nav-actions">
+                            <a class="btn btn-primary" href="reservations.html">Check availability</a>
+                            <a class="btn btn-outline" href="rooms.html">Explore rooms</a>
+                        </div>
+                        <div class="hero-card">
+                            <strong>Quick booking</strong>
+                            <form class="booking-strip">
+                                <label class="input-field">
+                                    Check-in
+                                    <input type="date" name="checkin" required>
+                                </label>
+                                <label class="input-field">
+                                    Check-out
+                                    <input type="date" name="checkout" required>
+                                </label>
+                                <label class="input-field">
+                                    Guests
+                                    <select name="guests">
+                                        <option>1 Adult</option>
+                                        <option>2 Adults</option>
+                                        <option>2 Adults, 1 Child</option>
+                                        <option>Family of 4</option>
+                                    </select>
+                                </label>
+                                <a class="btn btn-primary" href="reservations.html">Find rooms</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hero-image reveal">
+                        <img src="./images/hero.svg" alt="Coastal hotel facade and terrace">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container split reveal">
+                    <div>
+                        <span class="pill">Designed for slow mornings</span>
+                        <h2 class="section-title">A stay shaped around the sea, the city, and you.</h2>
+                        <p class="section-subtitle">From sunrise rituals on the rooftop deck to deep-soak baths in every suite, every detail at Travilifa is designed for ease and calm.</p>
+                        <div class="stat-grid">
+                            <div class="stat">
+                                <strong>86</strong>
+                                <p class="muted">Design-forward rooms</p>
+                            </div>
+                            <div class="stat">
+                                <strong>3</strong>
+                                <p class="muted">Dining concepts</p>
+                            </div>
+                            <div class="stat">
+                                <strong>24/7</strong>
+                                <p class="muted">Guest concierge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/lobby.svg" alt="Light-filled hotel lobby with lounge seating">
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container reveal">
+                    <h2 class="section-title">Rooms with a view and a point of view.</h2>
+                    <p class="section-subtitle">Choose from airy studios to panoramic suites, all dressed in coastal textures and quiet luxury.</p>
+                    <div class="grid grid-3" style="margin-top:2rem;">
+                        <article class="card">
+                            <img src="./images/room-ocean.svg" alt="Ocean studio room">
+                            <div class="card-title">Ocean Studio</div>
+                            <p class="card-meta">King bed, balcony, rain shower, 38 sqm</p>
+                            <div class="tag-row">
+                                <span class="tag">From $180</span>
+                                <span class="tag">Sea view</span>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/room-garden.svg" alt="Garden room">
+                            <div class="card-title">Garden Retreat</div>
+                            <p class="card-meta">Queen bed, courtyard patio, 34 sqm</p>
+                            <div class="tag-row">
+                                <span class="tag">From $150</span>
+                                <span class="tag">Quiet wing</span>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/suite.svg" alt="Signature suite">
+                            <div class="card-title">Signature Suite</div>
+                            <p class="card-meta">Separate lounge, soaking tub, 54 sqm</p>
+                            <div class="tag-row">
+                                <span class="tag">From $260</span>
+                                <span class="tag">Best view</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container split reveal">
+                    <img src="./images/spa.svg" alt="Spa lounge with natural textures">
+                    <div>
+                        <span class="pill">Wellness at every pace</span>
+                        <h2 class="section-title">Amenities that make every day feel like day one.</h2>
+                        <p class="section-subtitle">Infinity pool, movement studio, salt sauna, and curated culinary journeys across three on-site venues.</p>
+                        <div class="tag-row" style="margin-top:1rem;">
+                            <span class="tag">Infinity pool</span>
+                            <span class="tag">Salt sauna</span>
+                            <span class="tag">Rooftop deck</span>
+                            <span class="tag">Kids club</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container reveal">
+                    <h2 class="section-title">Seasonal offers made for escaping.</h2>
+                    <div class="grid grid-3" style="margin-top:2rem;">
+                        <article class="card">
+                            <img src="./images/sunset.svg" alt="Sunset terrace">
+                            <div class="card-title">Sunset Stay</div>
+                            <p class="card-meta">Late checkout and rooftop dining credit.</p>
+                            <a class="btn btn-outline" href="offers.html">View offer</a>
+                        </article>
+                        <article class="card">
+                            <img src="./images/terrace.svg" alt="Private terrace">
+                            <div class="card-title">Suite Upgrade</div>
+                            <p class="card-meta">Reserve 3 nights, upgrade to a suite.</p>
+                            <a class="btn btn-outline" href="offers.html">View offer</a>
+                        </article>
+                        <article class="card">
+                            <img src="./images/dining.svg" alt="Dining experience">
+                            <div class="card-title">Taste of the Coast</div>
+                            <p class="card-meta">Chef tasting menu for two.</p>
+                            <a class="btn btn-outline" href="offers.html">View offer</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container reveal">
+                    <div class="cta-panel">
+                        <h2 class="section-title">Ready for a lighter, calmer stay?</h2>
+                        <p>Explore availability and secure your dates in minutes.</p>
+                        <a class="btn" href="reservations.html">Start reservation</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
             <div class="container">
-                <div class=" row">
-                    <div class="col p-3 "><img src="Group.png" class="img places-img rounded-1 object-fit-contain "
-                            alt=""></div>
-                    <div class="col p-2">
-                        <p class=" count">Travelers Point</p>
-                        <h3>We help to find your dream place</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-                            elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi</p>
-                        <div class="row">
-                            <div class="col-6"><span class="count">100+</span>
-                                <p>Holiday Package</p>
-                            </div>
-                            <div class="col-6"><span class="count">172</span>
-                                <p>Hotels</p>
-                            </div>
-                            <div class="col-6"><span class="count">68</span>
-                                <p>Elite Transportation</p>
-                            </div>
-                            <div class="col-6"><span class="count">32M+</span>
-                                <p>we help to find your dream place</p>
-                            </div>
+                <div class="footer-grid">
+                    <div>
+                        <div class="brand">
+                            <span class="brand-mark">T</span>
+                            Travilifa
                         </div>
+                        <p class="muted">A modern coastal hotel in Alexandria, designed for slow mornings and bright nights.</p>
                     </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a><br>
+                        <a href="rooms.html">Rooms</a><br>
+                        
+                        <a href="offers.html">Offers</a>
+                    </div>
+                    <div>
+                        <h4>Plan</h4>
+                        <a href="reservations.html">Reservations</a><br>
+                        
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p class="muted">Seafront Avenue 18, Alexandria</p>
+                        <p class="muted">+20 102 596 7218</p>
+                        <p class="muted">abdo.cs.2004@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>Copyright 2026 Travilifa Hotel</span>
+                    <span>Privacy and Terms</span>
                 </div>
             </div>
-        </section>
-        <section class="home-section2 h-100" id="services">
-            <p class="count"> Top Destination</p>
-            <h3>Discover your love</h3>
-            <div class="row justify-content-center p-2">
-                <div class="card col-lg-3 col-md-3 col-sm-8 shadow-sm p-2 m-1"><img class="card-img" src="one.png"
-                        alt="Kepulauan Wakatobi">
-                    <div class="card-body">
-                        <h5 class="card-title">Kepulauan Wakatobi</h5>
-                        <div class="row justify-content-between flex-wrap">
-                            <div class="col-6"><span>Rp.9,5jt</span></div>
-                            <div class="col-6"><span><i class="fa-solid fa-location-arrow p-1"></i>12 days for
-                                    trip</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-3 col-sm-8 shadow-sm p-2 m-1"><img class="card-img" src="two.png"
-                        alt="Raja Ampat, Papua Barat">
-                    <div class="card-body">
-                        <h5 class="card-title">Raja Ampat, Papua Barat</h5>
-                        <div class="row justify-content-between flex-wrap">
-                            <div class="col-6"><span>Rp.20,5jt</span></div>
-                            <div class="col-6"><span><i class="fa-solid fa-location-arrow p-1"></i>14 days for
-                                    trip</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-3 col-sm-8 shadow-sm p-2 m-1"><img class="card-img"
-                        src="three.png" alt="Taman Nasional Bromo">
-                    <div class="card-body">
-                        <h5 class="card-title">Taman Nasional Bromo</h5>
-                        <div class="row justify-content-between flex-wrap">
-                            <div class="col-6"><span>Rp.9,5jt</span></div>
-                            <div class="col-6"><span><i class="fa-solid fa-location-arrow p-1"></i>7 days for
-                                    trip</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-3 col-sm-8 shadow-sm p-2 m-1"><img class="card-img" src="four.png"
-                        alt="Gili Trawangan, Lombok">
-                    <div class="card-body">
-                        <h5 class="card-title">Gili Trawangan, Lombok</h5>
-                        <div class="row justify-content-between flex-wrap">
-                            <div class="col-6"><span>Rp.6,5jt</span></div>
-                            <div class="col-6"><span><i class="fa-solid fa-location-arrow p-1"></i>7 days for
-                                    trip</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-3 col-sm-8 shadow-sm p-2 m-1"><img class="card-img" src="five.png"
-                        alt="Taman Nasional Bunaken">
-                    <div class="card-body">
-                        <h5 class="card-title">Taman Nasional Bunaken</h5>
-                        <div class="row justify-content-between flex-wrap">
-                            <div class="col-6"><span>Rp.10,5jt</span></div>
-                            <div class="col-6"><span><i class="fa-solid fa-location-arrow p-1"></i>9 days for
-                                    trip</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-3 col-md-3 col-sm-8 shadow-sm p-2 m-1"><img class="card-img" src="six.png"
-                        alt="Taman Nasional Komodo">
-                    <div class="card-body">
-                        <h5 class="card-title">Taman Nasional Komodo</h5>
-                        <div class="row justify-content-between flex-wrap">
-                            <div class="col-6"><span>Rp.7,5jt</span></div>
-                            <div class="col-6"><span><i class="fa-solid fa-location-arrow p-1"></i>7 days for
-                                    trip</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="home-section3" id="about">
-            <p class="count"> Testimonial</p>
-            <h3>What they say about us</h3>
-            <div class="container">
-                <div class="row">
-
-                    <div class=" col-md-6 mb-4 w-30">
-                        <div class="card w-100 p-4 card-box">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="man.png" class="rounded-circle img-thumbnail me-3" width="50"
-                                    alt="Robert John K.">
-                                <h5 class="mb-0">Robert John K.</h5>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                                    purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class=" col-md-6 mb-4 w-30">
-                        <div class="card w-100 p-4 card-box">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="man.png" class="rounded-circle img-thumbnail me-3" width="50"
-                                    alt="Robert John K.">
-                                <h5 class="mb-0">Robert John K.</h5>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                                    purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class=" col-md-6 mb-4 w-30">
-                        <div class="card w-100 p-4 card-box">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="man.png" class="rounded-circle img-thumbnail me-3" width="50"
-                                    alt="Robert John K.">
-                                <h5 class="mb-0">Robert John K.</h5>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                                    purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class=" col-md-6 mb-4 w-30">
-                        <div class="card w-100 p-4 card-box">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="man.png" class="rounded-circle img-thumbnail me-3" width="50"
-                                    alt="Robert John K.">
-                                <h5 class="mb-0">Robert John K.</h5>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                                    purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class=" col-md-6 mb-4 w-30">
-                        <div class="card w-100 p-4 card-box">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="man.png" class="rounded-circle img-thumbnail me-3" width="50"
-                                    alt="Robert John K.">
-                                <h5 class="mb-0">Robert John K.</h5>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                                    purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class=" col-md-6 mb-4 w-30">
-                        <div class="card w-100 p-4 card-box">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="man.png" class="rounded-circle img-thumbnail me-3" width="50"
-                                    alt="Robert John K.">
-                                <h5 class="mb-0">Robert John K.</h5>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-                                    purus sit amet luctus venenatis</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <div class="container-fluid mt-5">
-            <footer class="text-center text-lg-start text-white bg-success" id="contact">
-                <div class="container p-4 pb-0">
-                    <section class="">
-                        <div class="row">
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Travilifa</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non
-                                    enim praesent elementum facilisis leo, vel</p>
-                            </div>
-                            <hr class="w-100 clearfix d-md-none">
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
-                                <p><a class="text-white">Discover</a></p>
-                                <p><a class="text-white">Special Deals</a></p>
-                                <p><a class="text-white">Services</a></p>
-                                <p><a class="text-white">Community</a></p>
-                                <p><a class="text-white">About Us</a></p>
-                            </div>
-                            <hr class="w-100 clearfix d-md-none">
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
-                                <p><a class="text-white">About Us</a></p>
-                                <p><a class="text-white">Blog &amp; Articles</a></p>
-                                <p><a class="text-white">Term and Condition</a></p>
-                                <p><a class="text-white">Privacy Policy</a></p>
-                                <p><a class="text-white">Contact Us</a></p>
-                            </div>
-                            <hr class="w-100 clearfix d-md-none">
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                                <p><i class="fa-solid fa-home mr-3"></i> Egypt</p>
-                                <p><i class="fas fa-envelope mr-3"></i> abdo.cs.2004@gmail.com</p>
-                                <p><i class="fas fa-phone mr-3"></i> +20 1025967218</p>
-                                <p><i class="fas fa-print mr-3"></i> +20 1148102054</p>
-                            </div>
-                        </div>
-                    </section>
-                    <hr class="my-3">
-                    <section class="p-3 pt-0">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-7 col-lg-8 text-center text-md-start">
-                                <div class="p-3">©2024 Copyright : Eng/<a class="text-white" href="">Abdo Ibrahim</a>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end"><a href="https://www.facebook.com/abdelrahman.ebrahim.18659"
-                                    class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
-                                        class="fab fa-facebook-f"></i></a><a
-                                    class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
-                                        class="fab fa-twitter"></i></a><a
-                                    class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
-                                        class="fab fa-google"></i></a><a href="https://www.instagram.com/abdelrahiman_ibrahim.2004/"
-                                    class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
-                                        class="fab fa-instagram"></i></a></div>
-                        </div>
-                    </section>
-                </div>
-            </footer>
-        </div>
+        </footer>
     </div>
 
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>

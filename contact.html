@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Travilifa Hotel for reservations, events, or personalized itineraries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LodgingBusiness",
+            "name": "Travilifa Hotel",
+            "description": "A modern coastal hotel offering curated rooms, wellness amenities, and easy reservations.",
+            "url": "https://example.com",
+            "telephone": "+20-102-596-7218",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Seafront Avenue 18",
+                "addressLocality": "Alexandria",
+                "addressRegion": "Alexandria",
+                "addressCountry": "EG"
+            },
+            "checkinTime": "15:00",
+            "checkoutTime": "11:00"
+        }
+    </script>
+    <title>Contact - Travilifa Hotel</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">T</span>
+                    Travilifa
+                </a>
+                <nav class="nav" data-nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a class="active" href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a class="btn btn-outline" href="offers.html">Seasonal Offers</a>
+                    <a class="btn btn-primary" href="reservations.html">Book a stay</a>
+                </div>
+                <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-hero">
+                <div class="container hero-grid">
+                    <div class="reveal">
+                        <span class="pill">Contact</span>
+                        <h1 class="page-title">We are here to plan every detail.</h1>
+                        <p class="section-subtitle">Reach out for reservations, event inquiries, or a personalized itinerary.</p>
+                    </div>
+                    <div class="hero-image reveal">
+                        <img src="./images/map.svg" alt="Map location">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container split reveal">
+                    <form class="panel">
+                        <h2 class="section-title">Send a message</h2>
+                        <div class="form-grid">
+                            <label class="input-field">
+                                Full name
+                                <input type="text" name="name" required>
+                            </label>
+                            <label class="input-field">
+                                Email
+                                <input type="email" name="email" required>
+                            </label>
+                            <label class="input-field">
+                                Phone
+                                <input type="tel" name="phone">
+                            </label>
+                            <label class="input-field">
+                                Subject
+                                <select name="subject">
+                                    <option>Reservations</option>
+                                    <option>Events</option>
+                                    <option>Partnerships</option>
+                                    <option>General inquiry</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label class="input-field">
+                            Message
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+                        <a class="btn btn-primary" href="mailto:hello@travilifa.com">Send message</a>
+                    </form>
+                    <div>
+                        <div class="contact-card">
+                            <h3 class="card-title">Travilifa Hotel</h3>
+                            <p class="card-meta">Seafront Avenue 18, Alexandria</p>
+                            <p class="card-meta">hello@travilifa.com</p>
+                            <p class="card-meta">+20 102 596 7218</p>
+                        </div>
+                        <div class="contact-card" style="margin-top:1.2rem;">
+                            <h3 class="card-title">Front desk</h3>
+                            <p class="card-meta">Open 24/7</p>
+                            <p class="card-meta">WhatsApp: +20 114 810 2054</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="brand">
+                            <span class="brand-mark">T</span>
+                            Travilifa
+                        </div>
+                        <p class="muted">A modern coastal hotel in Alexandria, designed for slow mornings and bright nights.</p>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a><br>
+                        <a href="rooms.html">Rooms</a><br>
+                        
+                        <a href="offers.html">Offers</a>
+                    </div>
+                    <div>
+                        <h4>Plan</h4>
+                        <a href="reservations.html">Reservations</a><br>
+                        
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p class="muted">Seafront Avenue 18, Alexandria</p>
+                        <p class="muted">+20 102 596 7218</p>
+                        <p class="muted">abdo.cs.2004@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>Copyright 2026 Travilifa Hotel</span>
+                    <span>Privacy and Terms</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

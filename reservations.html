@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve your stay at Travilifa Hotel in minutes with our modern booking experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LodgingBusiness",
+            "name": "Travilifa Hotel",
+            "description": "A modern coastal hotel offering curated rooms, wellness amenities, and easy reservations.",
+            "url": "https://example.com",
+            "telephone": "+20-102-596-7218",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Seafront Avenue 18",
+                "addressLocality": "Alexandria",
+                "addressRegion": "Alexandria",
+                "addressCountry": "EG"
+            },
+            "checkinTime": "15:00",
+            "checkoutTime": "11:00"
+        }
+    </script>
+    <title>Reservations - Travilifa Hotel</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">T</span>
+                    Travilifa
+                </a>
+                <nav class="nav" data-nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="offers.html">Offers</a>
+                    <a class="active" href="reservations.html">Reservations</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="nav-actions">
+                    <a class="btn btn-outline" href="offers.html">Seasonal Offers</a>
+                    <a class="btn btn-primary" href="reservations.html">Book a stay</a>
+                </div>
+                <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-hero">
+                <div class="container hero-grid">
+                    <div class="reveal">
+                        <span class="pill">Reservations</span>
+                        <h1 class="page-title">Reserve your stay in just a few clicks.</h1>
+                        <p class="section-subtitle">Choose your dates, room preference, and add thoughtful extras for a seamless arrival.</p>
+                    </div>
+                    <div class="hero-image reveal">
+                        <img src="./images/hero.svg" alt="Hotel coastline">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container split reveal">
+                    <form class="panel">
+                        <h2 class="section-title">Booking details</h2>
+                        <div class="form-grid">
+                            <label class="input-field">
+                                Check-in
+                                <input type="date" name="checkin" required>
+                            </label>
+                            <label class="input-field">
+                                Check-out
+                                <input type="date" name="checkout" required>
+                            </label>
+                            <label class="input-field">
+                                Room type
+                                <select name="room">
+                                    <option>Ocean Studio</option>
+                                    <option>Garden Retreat</option>
+                                    <option>Signature Suite</option>
+                                    <option>Family Suite</option>
+                                    <option>Penthouse Suite</option>
+                                </select>
+                            </label>
+                            <label class="input-field">
+                                Guests
+                                <select name="guests">
+                                    <option>1 Adult</option>
+                                    <option>2 Adults</option>
+                                    <option>2 Adults, 1 Child</option>
+                                    <option>Family of 4</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label class="input-field">
+                            Special requests
+                            <textarea name="notes" rows="4" placeholder="Airport transfer, allergies, pillow type"></textarea>
+                        </label>
+                        <a class="btn btn-primary" href="contact.html">Request availability</a>
+                    </form>
+                    <div class="panel">
+                        <h3 class="section-title" style="font-size:1.6rem;">Included with every stay</h3>
+                        <ul class="list">
+                            <li>Complimentary coastal breakfast and espresso bar.</li>
+                            <li>Wellness access with sauna, pool, and movement studio.</li>
+                            <li>Personalized city guide from our concierge team.</li>
+                            <li>Flexible check-in when booked directly.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag">Check-in 3:00 PM</span>
+                            <span class="tag">Check-out 11:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container reveal">
+                    <h2 class="section-title">Reservation FAQ</h2>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <h3 class="card-title">Can I cancel or change my reservation?</h3>
+                            <p class="card-meta">Yes. Flexible bookings can be changed up to 48 hours before arrival.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="card-title">Do you offer airport transfers?</h3>
+                            <p class="card-meta">Private car service is available on request. Mention it in special requests.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="card-title">Is breakfast included?</h3>
+                            <p class="card-meta">All direct bookings include our coastal breakfast experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="brand">
+                            <span class="brand-mark">T</span>
+                            Travilifa
+                        </div>
+                        <p class="muted">A modern coastal hotel in Alexandria, designed for slow mornings and bright nights.</p>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a><br>
+                        <a href="rooms.html">Rooms</a><br>
+                        
+                        <a href="offers.html">Offers</a>
+                    </div>
+                    <div>
+                        <h4>Plan</h4>
+                        <a href="reservations.html">Reservations</a><br>
+                        
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p class="muted">Seafront Avenue 18, Alexandria</p>
+                        <p class="muted">+20 102 596 7218</p>
+                        <p class="muted">abdo.cs.2004@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>Copyright 2026 Travilifa Hotel</span>
+                    <span>Privacy and Terms</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
